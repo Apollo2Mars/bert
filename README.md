@@ -1,5 +1,9 @@
 # BERT
 
+**\*\*\*\*\* Doing \*\*\*\*\***
+
+rewrite esitimator early stopping hook
+
 **\*\*\*\*\* New November 23rd, 2018: Un-normalized multilingual model + Thai +
 Mongolian \*\*\*\*\***
 
