@@ -1,6 +1,6 @@
 
-BERT_LARGE_DIR=./chinese_L-12_H-768_A-12
-SQUAD_DIR=./data_suqad
+BERT_LARGE_DIR=/export/home/sunhongchao1/2-MRC/bert/chinese_L-12_H-768_A-12
+SQUAD_DIR=/export/home/sunhongchao1/2-MRC/bert/data_squad
 
 python3 run_squad.py \
   --vocab_file=$BERT_LARGE_DIR/vocab.txt \
@@ -15,7 +15,7 @@ python3 run_squad.py \
   --num_train_epochs=2.0 \
   --max_seq_length=384 \
   --doc_stride=128 \
-  --output_dir=gs://some_bucket/squad_large/ \
-  --use_tpu=True \
+  --output_dir=./output_squad \
+  --use_tpu=False \
   --tpu_name=$TPU_NAME \
   --version_2_with_negative=True
